@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:      #09090f;
+  --surface: #0f0f18;
+  --card:    #141420;
+  --border:  #1e1e2e;
+  --accent:  #c8f060;
+  --blue:    #5b6bfa;
+  --pink:    #fa5b8a;
+  --green:   #40d996;
+  --muted:   #5a5a72;
+  --text:    #e2e2f0;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Mono', 'Fira Code', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+/* Prose overrides for article rendering */
+.prose h1, .prose h2, .prose h3 { color: var(--text); font-family: 'Syne', sans-serif; }
+.prose p { color: #c0c0d8; }
+.prose strong { color: var(--text); }
+.prose code { background: var(--border); padding: 2px 6px; border-radius: 4px; font-size: 0.85em; }
+.prose pre { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+.prose a { color: var(--blue); }
+.prose ul li, .prose ol li { color: #c0c0d8; }

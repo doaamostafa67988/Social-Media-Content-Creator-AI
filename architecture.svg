@@ -1,0 +1,329 @@
+<svg viewBox="0 0 1100 720" xmlns="http://www.w3.org/2000/svg" font-family="'DM Mono', monospace">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090f"/>
+      <stop offset="100%" stop-color="#0f0f18"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5b6bfa"/>
+      <stop offset="50%" stop-color="#c8f060"/>
+      <stop offset="100%" stop-color="#fa5b8a"/>
+    </linearGradient>
+    <linearGradient id="cardBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#141420"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#40d996" opacity="0.7"/>
+    </marker>
+    <marker id="arrowAccent" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#c8f060" opacity="0.7"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#5b6bfa" opacity="0.7"/>
+    </marker>
+    <marker id="arrowPink" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#fa5b8a" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="720" fill="url(#bgGrad)"/>
+  <!-- Grid dots -->
+  <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="0.8" fill="#ffffff" opacity="0.04"/>
+  </pattern>
+  <rect width="1100" height="720" fill="url(#dots)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1100" height="3" fill="url(#accentLine)"/>
+
+  <!-- Title -->
+  <text x="40" y="44" font-family="'Syne', sans-serif" font-size="20" font-weight="800" fill="#e2e2f0" letter-spacing="-0.5">ContentForge</text>
+  <text x="180" y="44" font-family="'Syne', sans-serif" font-size="20" font-weight="800" fill="#c8f060" letter-spacing="-0.5"> — Autonomous Content Pipeline Architecture</text>
+  <text x="40" y="62" font-size="10" fill="#5a5a72" letter-spacing="2">MULTI-AGENT · LANGGRAPH · RAG · CELERY · FASTAPI</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION LABELS
+  ═══════════════════════════════════════════════════════ -->
+  <!-- Frontend label -->
+  <rect x="30" y="82" width="84" height="18" rx="4" fill="#5b6bfa" opacity="0.15"/>
+  <text x="38" y="95" font-size="9" fill="#5b6bfa" letter-spacing="1.5" font-weight="600">FRONTEND</text>
+
+  <!-- Backend label -->
+  <rect x="30" y="206" width="76" height="18" rx="4" fill="#c8f060" opacity="0.12"/>
+  <text x="38" y="219" font-size="9" fill="#c8f060" letter-spacing="1.5" font-weight="600">BACKEND</text>
+
+  <!-- Agents label -->
+  <rect x="30" y="330" width="68" height="18" rx="4" fill="#40d996" opacity="0.12"/>
+  <text x="38" y="343" font-size="9" fill="#40d996" letter-spacing="1.5" font-weight="600">AGENTS</text>
+
+  <!-- Infrastructure label -->
+  <rect x="30" y="570" width="104" height="18" rx="4" fill="#fa5b8a" opacity="0.12"/>
+  <text x="38" y="583" font-size="9" fill="#fa5b8a" letter-spacing="1.5" font-weight="600">INFRASTRUCTURE</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FRONTEND ROW
+  ═══════════════════════════════════════════════════════ -->
+
+  <!-- Dashboard -->
+  <rect x="30" y="106" width="160" height="82" rx="10" fill="url(#cardBlue)" stroke="#5b6bfa" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="30" y="106" width="160" height="3" rx="2" fill="#5b6bfa" opacity="0.6"/>
+  <text x="110" y="128" text-anchor="middle" font-size="18">🖥️</text>
+  <text x="110" y="148" text-anchor="middle" font-size="11" fill="#e2e2f0" font-weight="600" font-family="'Syne',sans-serif">Dashboard UI</text>
+  <text x="110" y="163" text-anchor="middle" font-size="9" fill="#5a5a72">Next.js 14 · TypeScript</text>
+  <text x="110" y="178" text-anchor="middle" font-size="9" fill="#5a5a72">TailwindCSS · Framer</text>
+
+  <!-- History -->
+  <rect x="210" y="106" width="140" height="82" rx="10" fill="url(#cardBlue)" stroke="#5b6bfa" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="210" y="106" width="140" height="3" rx="2" fill="#5b6bfa" opacity="0.4"/>
+  <text x="280" y="128" text-anchor="middle" font-size="18">📋</text>
+  <text x="280" y="148" text-anchor="middle" font-size="11" fill="#e2e2f0" font-weight="600" font-family="'Syne',sans-serif">History Page</text>
+  <text x="280" y="163" text-anchor="middle" font-size="9" fill="#5a5a72">Run logs · Status</text>
+  <text x="280" y="178" text-anchor="middle" font-size="9" fill="#5a5a72">Delete · Re-run</text>
+
+  <!-- Social Preview -->
+  <rect x="370" y="106" width="150" height="82" rx="10" fill="url(#cardBlue)" stroke="#5b6bfa" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="370" y="106" width="150" height="3" rx="2" fill="#5b6bfa" opacity="0.4"/>
+  <text x="445" y="128" text-anchor="middle" font-size="18">📱</text>
+  <text x="445" y="148" text-anchor="middle" font-size="11" fill="#e2e2f0" font-weight="600" font-family="'Syne',sans-serif">Social Previews</text>
+  <text x="445" y="163" text-anchor="middle" font-size="9" fill="#5a5a72">Twitter · LinkedIn</text>
+  <text x="445" y="178" text-anchor="middle" font-size="9" fill="#5a5a72">Instagram · Hashtags</text>
+
+  <!-- Blog Preview -->
+  <rect x="540" y="106" width="140" height="82" rx="10" fill="url(#cardBlue)" stroke="#5b6bfa" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="540" y="106" width="140" height="3" rx="2" fill="#5b6bfa" opacity="0.4"/>
+  <text x="610" y="128" text-anchor="middle" font-size="18">📄</text>
+  <text x="610" y="148" text-anchor="middle" font-size="11" fill="#e2e2f0" font-weight="600" font-family="'Syne',sans-serif">Blog Preview</text>
+  <text x="610" y="163" text-anchor="middle" font-size="9" fill="#5a5a72">Markdown render</text>
+  <text x="610" y="178" text-anchor="middle" font-size="9" fill="#5a5a72">Copy · Export</text>
+
+  <!-- SEO Panel -->
+  <rect x="700" y="106" width="140" height="82" rx="10" fill="url(#cardBlue)" stroke="#5b6bfa" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="700" y="106" width="140" height="3" rx="2" fill="#5b6bfa" opacity="0.4"/>
+  <text x="770" y="128" text-anchor="middle" font-size="18">📈</text>
+  <text x="770" y="148" text-anchor="middle" font-size="11" fill="#e2e2f0" font-weight="600" font-family="'Syne',sans-serif">SEO Panel</text>
+  <text x="770" y="163" text-anchor="middle" font-size="9" fill="#5a5a72">Meta · Keywords</text>
+  <text x="770" y="178" text-anchor="middle" font-size="9" fill="#5a5a72">Slug · Gaps</text>
+
+  <!-- Workflow Viz -->
+  <rect x="860" y="106" width="200" height="82" rx="10" fill="url(#cardBlue)" stroke="#c8f060" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="860" y="106" width="200" height="3" rx="2" fill="#c8f060" opacity="0.5"/>
+  <text x="960" y="128" text-anchor="middle" font-size="18">⚡</text>
+  <text x="960" y="148" text-anchor="middle" font-size="11" fill="#c8f060" font-weight="600" font-family="'Syne',sans-serif">Workflow Visualizer</text>
+  <text x="960" y="163" text-anchor="middle" font-size="9" fill="#5a5a72">Live agent progress</text>
+  <text x="960" y="178" text-anchor="middle" font-size="9" fill="#5a5a72">Quality score · Loops</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ARROWS: Frontend → Backend
+  ═══════════════════════════════════════════════════════ -->
+  <line x1="110" y1="188" x2="110" y2="226" stroke="#5b6bfa" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
+  <line x1="610" y1="188" x2="560" y2="226" stroke="#5b6bfa" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
+
+  <!-- ═══════════════════════════════════════════════════════
+       BACKEND / FASTAPI ROW
+  ═══════════════════════════════════════════════════════ -->
+
+  <!-- FastAPI -->
+  <rect x="30" y="230" width="200" height="82" rx="10" fill="#141420" stroke="#c8f060" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="30" y="230" width="200" height="3" rx="2" fill="#c8f060" opacity="0.7"/>
+  <text x="130" y="253" text-anchor="middle" font-size="18">🚀</text>
+  <text x="130" y="273" text-anchor="middle" font-size="12" fill="#c8f060" font-weight="700" font-family="'Syne',sans-serif">FastAPI</text>
+  <text x="130" y="289" text-anchor="middle" font-size="9" fill="#5a5a72">POST /api/content/generate</text>
+  <text x="130" y="303" text-anchor="middle" font-size="9" fill="#5a5a72">GET  /api/content/status/:id</text>
+
+  <!-- LangGraph -->
+  <rect x="250" y="230" width="200" height="82" rx="10" fill="#141420" stroke="#c8f060" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="250" y="230" width="200" height="3" rx="2" fill="#c8f060" opacity="0.7"/>
+  <text x="350" y="253" text-anchor="middle" font-size="18">🕸️</text>
+  <text x="350" y="273" text-anchor="middle" font-size="12" fill="#c8f060" font-weight="700" font-family="'Syne',sans-serif">LangGraph</text>
+  <text x="350" y="289" text-anchor="middle" font-size="9" fill="#5a5a72">StateGraph · Conditional</text>
+  <text x="350" y="303" text-anchor="middle" font-size="9" fill="#5a5a72">Reflection loop · MAX 2</text>
+
+  <!-- Groq LLM -->
+  <rect x="470" y="230" width="180" height="82" rx="10" fill="#141420" stroke="#c8f060" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="470" y="230" width="180" height="3" rx="2" fill="#c8f060" opacity="0.7"/>
+  <text x="560" y="253" text-anchor="middle" font-size="18">🧠</text>
+  <text x="560" y="273" text-anchor="middle" font-size="12" fill="#c8f060" font-weight="700" font-family="'Syne',sans-serif">Groq LLM</text>
+  <text x="560" y="289" text-anchor="middle" font-size="9" fill="#5a5a72">Llama 3.3 70B Versatile</text>
+  <text x="560" y="303" text-anchor="middle" font-size="9" fill="#5a5a72">Temp 0.3 · Low latency</text>
+
+  <!-- RAG / Chroma -->
+  <rect x="670" y="230" width="180" height="82" rx="10" fill="#141420" stroke="#40d996" stroke-width="1.5" stroke-opacity="0.4"/>
+  <rect x="670" y="230" width="180" height="3" rx="2" fill="#40d996" opacity="0.6"/>
+  <text x="760" y="253" text-anchor="middle" font-size="18">🗄️</text>
+  <text x="760" y="273" text-anchor="middle" font-size="12" fill="#40d996" font-weight="700" font-family="'Syne',sans-serif">ChromaDB / RAG</text>
+  <text x="760" y="289" text-anchor="middle" font-size="9" fill="#5a5a72">all-MiniLM-L6-v2</text>
+  <text x="760" y="303" text-anchor="middle" font-size="9" fill="#5a5a72">Ingest · Similarity search</text>
+
+  <!-- Tavily -->
+  <rect x="870" y="230" width="190" height="82" rx="10" fill="#141420" stroke="#40d996" stroke-width="1.5" stroke-opacity="0.4"/>
+  <rect x="870" y="230" width="190" height="3" rx="2" fill="#40d996" opacity="0.6"/>
+  <text x="965" y="253" text-anchor="middle" font-size="18">🔍</text>
+  <text x="965" y="273" text-anchor="middle" font-size="12" fill="#40d996" font-weight="700" font-family="'Syne',sans-serif">Tavily Search</text>
+  <text x="965" y="289" text-anchor="middle" font-size="9" fill="#5a5a72">Advanced web search</text>
+  <text x="965" y="303" text-anchor="middle" font-size="9" fill="#5a5a72">5 results · Summarized</text>
+
+  <!-- Arrows backend row -->
+  <line x1="230" y1="271" x2="250" y2="271" stroke="#c8f060" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowAccent)"/>
+  <line x1="450" y1="271" x2="470" y2="271" stroke="#c8f060" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowAccent)"/>
+  <line x1="650" y1="271" x2="670" y2="271" stroke="#40d996" stroke-width="1.5" stroke-opacity="0.5" marker-end="url(#arrowGreen)"/>
+  <line x1="850" y1="271" x2="870" y2="271" stroke="#40d996" stroke-width="1.5" stroke-opacity="0.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Backend → Agents arrows -->
+  <line x1="350" y1="312" x2="350" y2="356" stroke="#c8f060" stroke-width="1.5" stroke-opacity="0.5" marker-end="url(#arrowAccent)"/>
+
+  <!-- ═══════════════════════════════════════════════════════
+       AGENTS ROW  (7 agents)
+  ═══════════════════════════════════════════════════════ -->
+
+  <!-- Agent box macro: x, label, icon, desc, border color -->
+
+  <!-- 1. Strategist -->
+  <rect x="30" y="360" width="130" height="88" rx="10" fill="#141420" stroke="#5b6bfa" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="30" y="360" width="130" height="3" rx="2" fill="#5b6bfa" opacity="0.7"/>
+  <text x="95" y="383" text-anchor="middle" font-size="16">🧠</text>
+  <text x="95" y="401" text-anchor="middle" font-size="10" fill="#5b6bfa" font-weight="700" font-family="'Syne',sans-serif">Strategist</text>
+  <text x="95" y="416" text-anchor="middle" font-size="8" fill="#5a5a72">Outline</text>
+  <text x="95" y="428" text-anchor="middle" font-size="8" fill="#5a5a72">Keywords</text>
+  <text x="95" y="440" text-anchor="middle" font-size="8" fill="#5a5a72">Blueprint</text>
+
+  <!-- 2. Researcher -->
+  <rect x="180" y="360" width="130" height="88" rx="10" fill="#141420" stroke="#40d996" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="180" y="360" width="130" height="3" rx="2" fill="#40d996" opacity="0.7"/>
+  <text x="245" y="383" text-anchor="middle" font-size="16">🔍</text>
+  <text x="245" y="401" text-anchor="middle" font-size="10" fill="#40d996" font-weight="700" font-family="'Syne',sans-serif">Researcher</text>
+  <text x="245" y="416" text-anchor="middle" font-size="8" fill="#5a5a72">Tavily search</text>
+  <text x="245" y="428" text-anchor="middle" font-size="8" fill="#5a5a72">RAG ingest</text>
+  <text x="245" y="440" text-anchor="middle" font-size="8" fill="#5a5a72">Synthesize</text>
+
+  <!-- 3. Writer -->
+  <rect x="330" y="360" width="130" height="88" rx="10" fill="#141420" stroke="#c8f060" stroke-width="1.5" stroke-opacity="0.6"/>
+  <rect x="330" y="360" width="130" height="3" rx="2" fill="#c8f060" opacity="0.8"/>
+  <text x="395" y="383" text-anchor="middle" font-size="16">✍️</text>
+  <text x="395" y="401" text-anchor="middle" font-size="10" fill="#c8f060" font-weight="700" font-family="'Syne',sans-serif">Blog Writer</text>
+  <text x="395" y="416" text-anchor="middle" font-size="8" fill="#5a5a72">Long-form draft</text>
+  <text x="395" y="428" text-anchor="middle" font-size="8" fill="#5a5a72">800+ words</text>
+  <text x="395" y="440" text-anchor="middle" font-size="8" fill="#5a5a72">Revision aware</text>
+
+  <!-- 4. Reviewer -->
+  <rect x="480" y="360" width="130" height="88" rx="10" fill="#141420" stroke="#fa5b8a" stroke-width="1.5" stroke-opacity="0.6"/>
+  <rect x="480" y="360" width="130" height="3" rx="2" fill="#fa5b8a" opacity="0.8"/>
+  <text x="545" y="383" text-anchor="middle" font-size="16">🔄</text>
+  <text x="545" y="401" text-anchor="middle" font-size="10" fill="#fa5b8a" font-weight="700" font-family="'Syne',sans-serif">Reviewer</text>
+  <text x="545" y="416" text-anchor="middle" font-size="8" fill="#5a5a72">Score 1–10</text>
+  <text x="545" y="428" text-anchor="middle" font-size="8" fill="#5a5a72">Reflection loop</text>
+  <text x="545" y="440" text-anchor="middle" font-size="8" fill="#5a5a72">≥7 → proceed</text>
+
+  <!-- 5. SEO -->
+  <rect x="630" y="360" width="130" height="88" rx="10" fill="#141420" stroke="#40d996" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="630" y="360" width="130" height="3" rx="2" fill="#40d996" opacity="0.7"/>
+  <text x="695" y="383" text-anchor="middle" font-size="16">📈</text>
+  <text x="695" y="401" text-anchor="middle" font-size="10" fill="#40d996" font-weight="700" font-family="'Syne',sans-serif">SEO Optimizer</text>
+  <text x="695" y="416" text-anchor="middle" font-size="8" fill="#5a5a72">Meta + slug</text>
+  <text x="695" y="428" text-anchor="middle" font-size="8" fill="#5a5a72">Keywords</text>
+  <text x="695" y="440" text-anchor="middle" font-size="8" fill="#5a5a72">Content gaps</text>
+
+  <!-- 6. Social Adapter -->
+  <rect x="780" y="360" width="130" height="88" rx="10" fill="#141420" stroke="#5b6bfa" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="780" y="360" width="130" height="3" rx="2" fill="#5b6bfa" opacity="0.7"/>
+  <text x="845" y="383" text-anchor="middle" font-size="16">📱</text>
+  <text x="845" y="401" text-anchor="middle" font-size="10" fill="#5b6bfa" font-weight="700" font-family="'Syne',sans-serif">Social Adapter</text>
+  <text x="845" y="416" text-anchor="middle" font-size="8" fill="#5a5a72">Twitter thread</text>
+  <text x="845" y="428" text-anchor="middle" font-size="8" fill="#5a5a72">LinkedIn post</text>
+  <text x="845" y="440" text-anchor="middle" font-size="8" fill="#5a5a72">Instagram + tags</text>
+
+  <!-- 7. Scheduler -->
+  <rect x="930" y="360" width="130" height="88" rx="10" fill="#141420" stroke="#fa5b8a" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="930" y="360" width="130" height="3" rx="2" fill="#fa5b8a" opacity="0.7"/>
+  <text x="995" y="383" text-anchor="middle" font-size="16">🗓️</text>
+  <text x="995" y="401" text-anchor="middle" font-size="10" fill="#fa5b8a" font-weight="700" font-family="'Syne',sans-serif">Scheduler</text>
+  <text x="995" y="416" text-anchor="middle" font-size="8" fill="#5a5a72">Optimal timing</text>
+  <text x="995" y="428" text-anchor="middle" font-size="8" fill="#5a5a72">Platform schedule</text>
+  <text x="995" y="440" text-anchor="middle" font-size="8" fill="#5a5a72">Publish queue</text>
+
+  <!-- Agent flow arrows (left to right) -->
+  <line x1="160" y1="404" x2="180" y2="404" stroke="#40d996" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowGreen)"/>
+  <line x1="310" y1="404" x2="330" y2="404" stroke="#c8f060" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowAccent)"/>
+  <line x1="460" y1="404" x2="480" y2="404" stroke="#fa5b8a" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowPink)"/>
+  <line x1="610" y1="404" x2="630" y2="404" stroke="#40d996" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowGreen)"/>
+  <line x1="760" y1="404" x2="780" y2="404" stroke="#5b6bfa" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowBlue)"/>
+  <line x1="910" y1="404" x2="930" y2="404" stroke="#fa5b8a" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowPink)"/>
+
+  <!-- Reflection loop arc: Reviewer → Writer -->
+  <path d="M545,448 C545,520 395,520 395,448" stroke="#fa5b8a" stroke-width="1.5" stroke-opacity="0.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowPink)"/>
+  <text x="470" y="515" text-anchor="middle" font-size="8" fill="#fa5b8a" opacity="0.8">score &lt; 7 → rewrite</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       INFRASTRUCTURE ROW
+  ═══════════════════════════════════════════════════════ -->
+
+  <!-- SQLite -->
+  <rect x="30" y="598" width="160" height="82" rx="10" fill="#141420" stroke="#fa5b8a" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="30" y="598" width="160" height="3" rx="2" fill="#fa5b8a" opacity="0.5"/>
+  <text x="110" y="621" text-anchor="middle" font-size="16">🗃️</text>
+  <text x="110" y="640" text-anchor="middle" font-size="11" fill="#e2e2f0" font-weight="600" font-family="'Syne',sans-serif">SQLite</text>
+  <text x="110" y="656" text-anchor="middle" font-size="9" fill="#5a5a72">blog_posts table</text>
+  <text x="110" y="670" text-anchor="middle" font-size="9" fill="#5a5a72">SQLAlchemy ORM</text>
+
+  <!-- Celery + Redis -->
+  <rect x="210" y="598" width="200" height="82" rx="10" fill="#141420" stroke="#fa5b8a" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="210" y="598" width="200" height="3" rx="2" fill="#fa5b8a" opacity="0.5"/>
+  <text x="310" y="621" text-anchor="middle" font-size="16">⚙️</text>
+  <text x="310" y="640" text-anchor="middle" font-size="11" fill="#e2e2f0" font-weight="600" font-family="'Syne',sans-serif">Celery + Redis</text>
+  <text x="310" y="656" text-anchor="middle" font-size="9" fill="#5a5a72">Async task queue</text>
+  <text x="310" y="670" text-anchor="middle" font-size="9" fill="#5a5a72">Retry · Max 2 · Late ack</text>
+
+  <!-- Twitter API -->
+  <rect x="430" y="598" width="160" height="82" rx="10" fill="#141420" stroke="#1d9bf0" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="430" y="598" width="160" height="3" rx="2" fill="#1d9bf0" opacity="0.6"/>
+  <text x="510" y="621" text-anchor="middle" font-size="16">🐦</text>
+  <text x="510" y="640" text-anchor="middle" font-size="11" fill="#1d9bf0" font-weight="600" font-family="'Syne',sans-serif">Twitter/X API</text>
+  <text x="510" y="656" text-anchor="middle" font-size="9" fill="#5a5a72">API v2 · Tweepy</text>
+  <text x="510" y="670" text-anchor="middle" font-size="9" fill="#5a5a72">Thread publishing</text>
+
+  <!-- LinkedIn API -->
+  <rect x="610" y="598" width="160" height="82" rx="10" fill="#141420" stroke="#0a66c2" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="610" y="598" width="160" height="3" rx="2" fill="#0a66c2" opacity="0.6"/>
+  <text x="690" y="621" text-anchor="middle" font-size="16">💼</text>
+  <text x="690" y="640" text-anchor="middle" font-size="11" fill="#0a66c2" font-weight="600" font-family="'Syne',sans-serif">LinkedIn API</text>
+  <text x="690" y="656" text-anchor="middle" font-size="9" fill="#5a5a72">UGC Posts v2</text>
+  <text x="690" y="670" text-anchor="middle" font-size="9" fill="#5a5a72">OAuth · Bearer token</text>
+
+  <!-- ChromaDB -->
+  <rect x="790" y="598" width="145" height="82" rx="10" fill="#141420" stroke="#40d996" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="790" y="598" width="145" height="3" rx="2" fill="#40d996" opacity="0.5"/>
+  <text x="863" y="621" text-anchor="middle" font-size="16">🔮</text>
+  <text x="863" y="640" text-anchor="middle" font-size="11" fill="#40d996" font-weight="600" font-family="'Syne',sans-serif">ChromaDB</text>
+  <text x="863" y="656" text-anchor="middle" font-size="9" fill="#5a5a72">Persistent ./chroma_db</text>
+  <text x="863" y="670" text-anchor="middle" font-size="9" fill="#5a5a72">HuggingFace embed</text>
+
+  <!-- Vercel / GitHub -->
+  <rect x="955" y="598" width="110" height="82" rx="10" fill="#141420" stroke="#5b6bfa" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="955" y="598" width="110" height="3" rx="2" fill="#5b6bfa" opacity="0.5"/>
+  <text x="1010" y="621" text-anchor="middle" font-size="16">🚢</text>
+  <text x="1010" y="640" text-anchor="middle" font-size="11" fill="#5b6bfa" font-weight="600" font-family="'Syne',sans-serif">Deploy</text>
+  <text x="1010" y="656" text-anchor="middle" font-size="9" fill="#5a5a72">Vercel (frontend)</text>
+  <text x="1010" y="670" text-anchor="middle" font-size="9" fill="#5a5a72">Railway / Render</text>
+
+  <!-- Agents → Infra arrows -->
+  <line x1="95"  y1="448" x2="95"  y2="590" stroke="#fa5b8a" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4,3" marker-end="url(#arrowPink)"/>
+  <line x1="395" y1="448" x2="310" y2="590" stroke="#fa5b8a" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4,3" marker-end="url(#arrowPink)"/>
+  <line x1="845" y1="448" x2="690" y2="590" stroke="#0a66c2" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
+  <line x1="995" y1="448" x2="510" y2="590" stroke="#1d9bf0" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
+
+  <!-- Legend -->
+  <rect x="30" y="694" width="8" height="8" rx="2" fill="#c8f060"/>
+  <text x="44" y="702" font-size="9" fill="#5a5a72">LangGraph flow</text>
+  <rect x="130" y="694" width="8" height="8" rx="2" fill="#fa5b8a"/>
+  <text x="144" y="702" font-size="9" fill="#5a5a72">Reflection loop</text>
+  <rect x="230" y="694" width="8" height="8" rx="2" fill="#40d996"/>
+  <text x="244" y="702" font-size="9" fill="#5a5a72">RAG / vector</text>
+  <rect x="320" y="694" width="8" height="8" rx="2" fill="#5b6bfa"/>
+  <text x="334" y="702" font-size="9" fill="#5a5a72">API integration</text>
+  <text x="900" y="702" font-size="9" fill="#2a2a3a">ContentForge v1.0 · Autonomous Content Pipeline</text>
+</svg>
