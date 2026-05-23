@@ -7,13 +7,21 @@
 
 Experience the **ContentForge** autonomous pipeline firsthand:
 
-👉 **[Launch ContentForge Dashboard](https://your-vercel-link.com)**  
+👉 **[Launch ContentForge Dashboard](https://social-media-content-creator-ai-agents-fyt6ln6kb.vercel.app/dashboard)**  
 
 
 #### 🎥 Demo Showcase
 Watch the 7-agent pipeline in action, from topic research to social media scheduling:
 
-[![Watch the Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://your-video-link.com)
+
+
+
+
+https://github.com/user-attachments/assets/67ca86e1-b435-457f-b447-756d5be99083
+
+
+
+
 
 ---
 ## Architecture
